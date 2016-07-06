@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="添加号码:"
+            android:textColor="@color/grey"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/fragement_add_black_mobile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:digits="0123456789"
+            android:ems="15"
+            android:hint="请输入号码"
+            android:inputType="phone"
+            android:padding="10dp" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" >
+
+        <Button
+            android:id="@+id/bt_fragement_add"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/bt_set"
+            android:padding="10dp"
+            android:text="确定"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/bt_fragement_return"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/bt_set"
+            android:padding="10dp"
+            android:text="返回"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>
